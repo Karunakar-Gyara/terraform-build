@@ -8,11 +8,12 @@ steps:
       - '-c'
       - | 
         
+        #!/bin/bash
         echo "Hello World"
         chmod +x targetd.sh
         echo 'terrafrom version'
         terraform init
-        sh targetd.sh
+        bash targetd.sh
 
 
 options:
