@@ -1,9 +1,9 @@
 steps:
   - id: 'terraform init'
-    name: gcr.io/cloud-builders/terraform'
+    name: 'hashicorp/terraform:1.0.0'
     script: terraform init
-  - name: 'gcr.io/cloud-builders/terraform'
-    entrypoint: 'bash'
+  - name: 'hashicorp/terraform:1.0.0'
+    entrypoint: 'sh'
     args:
       - '-c'
       - | 
@@ -12,7 +12,7 @@ steps:
         chmod +x targetd.sh
         echo 'terrafrom version'
         terraform init
-        bash targetd.sh
+        sh targetd.sh
 
 
 options:
