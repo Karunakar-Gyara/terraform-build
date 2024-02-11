@@ -1,5 +1,5 @@
 
-#!/bin/bash
+#!/bin/sh
 
 
 
@@ -14,6 +14,6 @@ do
 done
 echo ${TARGET_LIST}
 # Run terraform destroy with multiple -target options
-#terraform destroy "${TARGET_LIST[@]}"
+terraform destroy "${TARGET_LIST[@]}" -auto-approve
 
 
