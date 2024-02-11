@@ -3,9 +3,18 @@ resource "google_storage_bucket" "static" {
  location      = "US"
  storage_class = "STANDARD"
 
+<<<<<<< HEAD
+ uniform_bucket_level_access = true 
+ lifecycle {
+   prevent_destroy = true
+ }
+
+  
+=======
  uniform_bucket_level_access = true
  
       
+>>>>>>> 03f50c5e6c82817b4f1cccac44d9f33e3c084c46
 }
 resource "google_compute_instance" "vm" {
   name              = "terraform-instance-1234"
@@ -49,8 +58,6 @@ provider "google" {
 
 
   
-
-
 
 
 
