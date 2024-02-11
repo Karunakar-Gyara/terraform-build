@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "python_practice3"
+    bucket = "python-practice-407605-new"
     prefix = "alerts/dev"
   }
 }
