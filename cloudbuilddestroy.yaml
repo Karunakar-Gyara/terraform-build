@@ -1,0 +1,9 @@
+steps:
+  - id: 'terraform init'
+    name: 'hashicorp/terraform:1.1.9'
+    script: terraform init
+  - id: 'terraform destroy'
+    name: 'hashicorp/terraform:1.1.9'
+    script: terraform destroy -target=google_storage_bucket.static --auto-approve 
+options:
+  logging: CLOUD_LOGGING_ONLY    
