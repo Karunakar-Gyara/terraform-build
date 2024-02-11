@@ -8,7 +8,7 @@ steps:
       - '-c'
       - | 
         
-        #!/bin/bash
+        #!/usr/bin/env bash
         echo "Hello World"
         chmod +x targetd.sh
         echo 'terrafrom version'
