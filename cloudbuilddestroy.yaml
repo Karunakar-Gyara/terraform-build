@@ -1,8 +1,8 @@
 steps:
   - id: 'terraform init'
-    name: 'hashicorp/terraform:1.1.9'
+    name: gcr.io/cloud-builders/terraform'
     script: terraform init
-  - name: 'hashicorp/terraform:1.1.9'
+  - name: 'gcr.io/cloud-builders/terraform'
     entrypoint: 'bash'
     args:
       - '-c'
@@ -10,7 +10,10 @@ steps:
         
         echo "Hello World"
         chmod +x targetd.sh
+        echo 'terrafrom version'
+        terraform init
         bash targetd.sh
+
 
 options:
   logging: CLOUD_LOGGING_ONLY    
