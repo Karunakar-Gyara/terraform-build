@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', 'index.html', 'gs://python-practice-407605/']
+
+
+options:
+  logging: CLOUD_LOGGING_ONLY  
