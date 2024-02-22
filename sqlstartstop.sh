@@ -9,7 +9,7 @@ for INSTANCE_NAME in "${SQL_INSTANCES[@]}"
 do
     # Stop MySQL instance
     gcloud sql instances patch  "${INSTANCE_NAME}" \
---activation-policy=ALWAYS 
+--activation-policy=NEVER 
 
 
 
