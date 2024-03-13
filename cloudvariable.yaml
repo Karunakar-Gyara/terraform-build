@@ -1,0 +1,12 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+      
+        echo "_BUCKET_ONE"
+        
+
+options:
+  logging: CLOUD_LOGGING_ONLY
