@@ -5,7 +5,7 @@ steps:
       - '-c'
       - |
       
-        echo "_BUCKET_ONE"
+        echo "{_BUCKET_ONE}"
         
 
 options:
