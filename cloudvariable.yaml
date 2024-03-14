@@ -6,7 +6,7 @@ steps:
       - |
       
         echo "${_BUCKET_ONE}"
-        chmod +X variable.sh
+        chmod 777 variable.sh
         bash variable.sh
 
 options:
