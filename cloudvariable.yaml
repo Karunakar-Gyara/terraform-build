@@ -6,18 +6,14 @@ steps:
       - |
       
         echo "${_BUCKET_ONE}" 
-        backend_buckets=$("${_BUCKET_ONE}" "${_BUCKET_TWO}" )
+        backend_buckets=("${_BUCKET_ONE}" "${_BUCKET_TWO}" )
         for Backend_Bucket in ${backend_buckets}
         do
            echo ${Backend_Bucket}
     
         done
-        wait  
+    
    
        
-        
-        chmod 777 variable.sh
-        bash variable.sh
-
 options:
   logging: CLOUD_LOGGING_ONLY
