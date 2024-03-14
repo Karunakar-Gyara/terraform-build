@@ -6,7 +6,8 @@ steps:
       - |
       
         echo "${_BUCKET_ONE}"
-        
+        chmod +X variable.sh
+        bash variable.sh
 
 options:
   logging: CLOUD_LOGGING_ONLY
