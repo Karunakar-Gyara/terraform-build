@@ -7,7 +7,7 @@ steps:
       
         echo "${_BUCKET_ONE}" 
         backend_buckets=("${_BUCKET_ONE}" "${_BUCKET_TWO}" )
-        for Backend_Bucket in ${backend_buckets}
+        for Backend_Bucket in "${backend_buckets[@]}"
         do
            echo ${Backend_Bucket}
     
